@@ -353,7 +353,7 @@ Page.prototype.initFilesList = function() {
           this.filelist.appendChild(div);
       }
 
-      var logs = answer.match(/tlr.json/g);
+      var logs = answer.match(/tl-data.[0-9]*.json/g);
       for (var i=0; i<logs.length; i++) {
           if (i>0 &&logs[i] == logs[i-1])
               continue;
